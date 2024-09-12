@@ -1,0 +1,172 @@
+#home {
+    background-image: url(../images/1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    border: solid rgba(255, 255, 255, .3);
+    transition: all .5s;
+}
+
+.icon:hover {
+    border: solid rgba(255, 255, 255, 1);
+}
+
+
+.section-header h2 {
+    font-size: 3rem;
+    letter-spacing: 20px;
+    color: rgba(0, 0, 0, .3);
+}
+
+.section-header h2::after {
+    content: "";
+    width: 10%;
+    height: 3px;
+    background-color: orangered;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translatex(-50%);
+}
+/* CSS افتراضي هنا */
+
+/* الشاشات الكبيرة (الكمبيوترات المكتبية) */
+@media (min-width: 992px) {
+    .navbar {
+      padding: 15px 30px;
+    }
+  
+    .navbar-nav {
+      display: flex;
+      gap: 20px;
+    }
+  
+    .carousel-item img {
+      width: 100%;
+    }
+  
+    header {
+      padding: 50px 0;
+    }
+  
+    .social-icon {
+      display: flex;
+      gap: 20px;
+    }
+  
+    .section-header h2, .section-header h3 {
+      font-size: 2rem;
+    }
+  
+    .card {
+      width: 18rem;
+    }
+  }
+  
+  /* الشاشات المتوسطة (الأجهزة اللوحية) */
+  @media (max-width: 991.98px) and (min-width: 768px) {
+    .navbar {
+      padding: 10px 20px;
+    }
+  
+    .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .carousel-item img {
+      width: 100%;
+    }
+  
+    header {
+      padding: 40px 0;
+    }
+  
+    .social-icon {
+      display: flex;
+      gap: 15px;
+    }
+  
+    .section-header h2, .section-header h3 {
+      font-size: 1.5rem;
+    }
+  
+    .card {
+      width: 16rem;
+    }
+  }
+  
+  /* الشاشات الصغيرة (الهواتف المحمولة) */
+  @media (max-width: 767.98px) {
+    .navbar {
+      padding: 8px 15px;
+    }
+  
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .navbar-nav .nav-item {
+      margin-bottom: 10px;
+    }
+  
+    .navbar-toggler {
+      margin: 0 auto;
+    }
+  
+    .carousel-item img {
+      width: 100%;
+    }
+  
+    header {
+      padding: 20px 0;
+    }
+  
+    .social-icon {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .section-header h2, .section-header h3 {
+      font-size: 1.2rem;
+    }
+  
+    .card {
+      width: 14rem;
+    }
+  }
+  
+  /* الشاشات الصغيرة جداً (الهواتف المحمولة الصغيرة) */
+  @media (max-width: 575.98px) {
+    .navbar {
+      padding: 5px 10px;
+    }
+  
+    .navbar-nav .nav-item {
+      margin-bottom: 5px;
+    }
+  
+    .text-dark {
+      font-size: 14px;
+    }
+  
+    .social-icon .icon {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .section-header h2, .section-header h3 {
+      font-size: 1rem;
+    }
+  
+    .card {
+      width: 12rem;
+    }
+  }
+  
